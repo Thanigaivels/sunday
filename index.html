@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+  </head>
+  <style>
+      html {
+        -webkit-app-region:drag;
+      }
+      body {
+        background-color: rgb(19,17,15);
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+      }
+      .wrapper {
+        text-align: center;
+        margin-top: 4em;
+        -webkit-app-region: no-drag;
+      }
+      input[type='text'] {
+        width: 60%;
+        display: block;
+        color: #ddd;
+        border: none;
+        margin-top: 1em;
+        padding: 0;
+        border-radius: 0;
+        outline: none;
+        min-width: 100%;
+        font-size: 1rem;
+        line-height: 2.5em;
+        font-family: 'Roboto', Arial, sans-serif;
+        border-bottom: 1px solid #0fc;
+        background-color: transparent;
+        background-image: url();
+        background-position: 7px 7px;
+        background-repeat: no-repeat;
+      }
+      .user {
+        float: right;
+        border: #0fc 2px solid;
+        border-radius: 7px;
+        padding: 10px;
+        width: 60%;
+        text-align: left;
+        margin: 10px 5px 10px 0px;
+      }
+      .aiva {
+        float: left;
+        border: #0fc 2px solid;
+        border-radius: 7px;
+        padding: 10px;
+        width: 60%;
+        text-align: left;
+        margin: 10px 0px 10px 5px;
+      }
+      #form {
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+      }
+      .chatbox {
+        position: relative;
+        /* border: 2px #ffffff solid; */
+        width: 80%;
+        height: 75vh;
+        margin: auto;
+      }
+      #chatarea{
+        margin-left: 5px;
+        overflow-y: scroll;
+        height: 80%;
+      }
+      #mic {
+        border: 2px #0fc solid;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: rgb(19,17,15);
+      }
+      #mic:hover {
+        background-color: rgb(45, 131, 127);
+      }
+      #close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999999;
+        background: transparent;
+        border: none;
+        color: #757575;
+        cursor: pointer;
+        -webkit-app-region: no-drag;
+        }
+      .wikipic {
+        width: 100%;
+        height: auto;
+      }
+      #loading {
+        width: 98%;
+        height: 98%;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        background-color: rgb(19,17,15);
+        display: none;
+      }
+      #loadingpic{
+        width: 75px;
+        height: auto;
+        margin: 20%;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background:grey; 
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0fc; 
+      }
+  </style>
+  <body>  
+    <button id="close"><i class="material-icons">&#xE14C;</i></button>
+    <div class="wrapper">
+        <h1 style="font-weight: 700">Sunday</h1>
+        <div class="chatbox">
+          <div id="chatarea">
+             
+          </div>
+          <br/>
+            <div id="form">
+              <img id="mic" src="https://img.icons8.com/material-outlined/42/00ffcc/microphone.png"/>
+              <input id="input" type="text" placeholder="Type or Say something...">
+            </div>
+        </div>
+        <div id="loading">
+          <img id="loadingpic" src="media/2.gif" />
+        </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

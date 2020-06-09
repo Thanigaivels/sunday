@@ -1,0 +1,19 @@
+{
+  "name": "sunday",
+  "version": "1.0.0",
+  "description": "A Voice Assistant powered by Azure and Python",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thanigaivel S",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.0.0",
+    "python-shell": "^2.0.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.2.1"
+  }
+}
